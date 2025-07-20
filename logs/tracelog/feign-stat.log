@@ -1,1 +1,0 @@
-{"time":"2025-07-21 00:48:08.300","stat.key":{"method":"GET","local.app":"order-service","request.url":"http://product-service/product/list"},"count":1,"total.cost.milliseconds":601,"success":"Y","load.test":"F"}
