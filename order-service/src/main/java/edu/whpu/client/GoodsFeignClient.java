@@ -1,6 +1,6 @@
 package edu.whpu.client;
 
-import edu.whpu.entity.Product;
+import edu.whpu.entity.Goods;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -17,11 +17,11 @@ import java.util.List;
 public interface GoodsFeignClient {
 
     @GetMapping("/list")
-    List<Product> getList();
+    List<Goods> getList();
 
     @GetMapping("/{id}")
-    Product getById(@PathVariable("id") Long id);
+    Goods getById(@PathVariable("id") Long id);
 
     @PostMapping("/save")
-    Boolean saveProduct(@RequestBody Product product);
+    Boolean saveGoods(@RequestBody Goods goods);
 }
