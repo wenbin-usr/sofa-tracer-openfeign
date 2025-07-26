@@ -10,7 +10,7 @@
   <name>sofa-tracer-openfeign</name>
   <url>http://maven.apache.org</url>
   <modules>
-    <module>product-service</module>
+    <module>goods-service</module>
     <module>order-service</module>
   </modules>
 
@@ -59,6 +59,18 @@
         <version>${spring-cloud-alibaba.version}</version>
         <type>pom</type>
         <scope>import</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>com.alipay.sofa</groupId>
+        <artifactId>tracer-sofa-boot-starter</artifactId>
+        <version>3.11.0</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.baomidou</groupId>
+        <artifactId>mybatis-plus-boot-starter</artifactId>
+        <version>3.4.2</version>
       </dependency>
     </dependencies>
   </dependencyManagement>

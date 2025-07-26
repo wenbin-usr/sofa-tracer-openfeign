@@ -13,8 +13,8 @@ import java.util.List;
  * @author bin_wen
  * @date 2025/2/8 23:40
  */
-@FeignClient(value = "product-service", path = "/product")
-public interface ProductFeignClient {
+@FeignClient(value = "goods-service", path = "/goods")
+public interface GoodsFeignClient {
 
     @GetMapping("/list")
     List<Product> getList();

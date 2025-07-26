@@ -1,6 +1,6 @@
 package edu.whpu.controller;
 
-import edu.whpu.client.ProductFeignClient;
+import edu.whpu.client.GoodsFeignClient;
 import edu.whpu.entity.Product;
 import edu.whpu.model.ResponseData;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,17 +19,17 @@ import java.util.List;
 public class DemoController {
 
     @Autowired
-    private ProductFeignClient productFeignClient;
+    private GoodsFeignClient goodsFeignClient;
 
     @GetMapping("/demo")
     public List<Product> getList() {
-        return productFeignClient.getList();
+        return goodsFeignClient.getList();
     }
 
     @PostMapping("/save")
     public ResponseData<Boolean> saveList(@RequestBody Product product) {
         ResponseData<Boolean> responseData = new ResponseData<>();
-        responseData.success(productFeignClient.saveProduct(product));
+        responseData.success(goodsFeignClient.saveProduct(product));
         return responseData;
     }
 }

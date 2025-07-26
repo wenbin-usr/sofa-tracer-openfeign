@@ -7,10 +7,10 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>product-service</artifactId>
+    <artifactId>goods-service</artifactId>
     <packaging>jar</packaging>
 
-    <name>product-service</name>
+    <name>goods-service</name>
     <url>http://maven.apache.org</url>
 
     <properties>
@@ -46,21 +46,30 @@
         </dependency>
 
         <dependency>
-            <groupId>com.alipay.sofa</groupId>
-            <artifactId>tracer-sofa-boot-starter</artifactId>
-            <version>3.11.0</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>com.alipay.sofa</groupId>
-                    <artifactId>sofa-tracer-spring-cloud-plugin</artifactId>
-                </exclusion>
-            </exclusions>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
         </dependency>
 
         <dependency>
             <groupId>com.alipay.sofa</groupId>
-            <artifactId>sofa-tracer-spring-cloud-plugin</artifactId>
-            <version>3.1.3</version>
+            <artifactId>tracer-sofa-boot-starter</artifactId>
+<!--            <exclusions>-->
+<!--                <exclusion>-->
+<!--                    <groupId>com.alipay.sofa</groupId>-->
+<!--                    <artifactId>sofa-tracer-spring-cloud-plugin</artifactId>-->
+<!--                </exclusion>-->
+<!--            </exclusions>-->
         </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+
+<!--        <dependency>-->
+<!--            <groupId>com.alipay.sofa</groupId>-->
+<!--            <artifactId>sofa-tracer-spring-cloud-plugin</artifactId>-->
+<!--            <version>3.1.3</version>-->
+<!--        </dependency>-->
     </dependencies>
 </project>
